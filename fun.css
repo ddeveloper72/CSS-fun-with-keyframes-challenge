@@ -1,0 +1,36 @@
+.ball {
+    background-color: red;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 0; /* there the ball starts from */
+    animation-name: bounce;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+
+    
+    
+}
+
+@keyframes bounce {
+    from {
+        top: 0; /* there the ball starts from */
+    }
+    
+    to {
+       top: 100px; /* there the ball treavels too */
+    }
+}
+
+@-webkit-keyframes bounce {
+    from {
+        top: 0;
+    }
+    
+    to {
+       top: 100px;
+    }    
+}
